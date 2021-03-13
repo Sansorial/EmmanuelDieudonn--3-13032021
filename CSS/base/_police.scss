@@ -1,0 +1,11 @@
+body{
+    font-family:roboto, sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: nth($font-size, 7);
+    @include mobile-only{
+        font-size: 22px;
+        text-align: left;
+    }
+}

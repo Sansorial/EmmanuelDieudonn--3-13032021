@@ -1,0 +1,72 @@
+.titlesection{
+    display: flex;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -100px;
+    padding-top: nth($padding-top, 2);
+    padding-right: 50px;
+    padding-bottom: nth($padding-bottom, 3);
+    padding-left: nth($padding-left, 3);
+    position: sticky;
+    background: $colorthird;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: nth($font-size, 7);
+    font-family: shrikhand, sans-serif ;
+    @include mobile-only{
+        border-radius: 40px 40px 0px 0px;
+        margin-top: -69px;
+        padding: 25px 25px 0px 25px;
+        font-size: nth($font-size, 4);
+        align-items: flex-end;
+    }
+    @include tablet-only{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+.hearts{
+    position: relative;
+    &:hover .hearts--pink{
+        transform: scale(1); 
+        transform-origin: left; 
+        transition: transform 400ms;
+    }
+    &--empty{
+        position: absolute;
+        bottom: 25%;
+        right: 0%;
+        font-size: nth($font-size, 7);
+        margin-right: 30px;
+        @include tablet-only{
+            bottom: 20%;
+            font-size: nth($font-size, 6);
+            margin-right: 0px;
+        }
+        @include mobile-only{
+            bottom: 10%;
+            font-size: nth($font-size, 6);
+            margin-right: nth($margin-right, 3);
+        }
+    }
+    &--pink{
+        color: #FF79DA;
+        position: absolute;
+        bottom: 25%;
+        right: 20%;
+        font-size: nth($font-size, 7);
+        margin-right: 30px;
+        transform: scale(0);
+        transition: transform 330ms ease-in-out;
+        overflow: hidden;
+        @include tablet-only{
+            bottom: 20%;
+            font-size: nth($font-size, 6);
+            margin-right: 0px;
+        }
+        @include mobile-only{
+            bottom: 10%;
+            font-size: nth($font-size, 6);
+            margin-right: nth($margin-right, 3);
+        }
+    }
+}

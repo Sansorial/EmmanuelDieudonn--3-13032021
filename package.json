@@ -1,0 +1,12 @@
+{
+  "name": "maquettes-ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood-versionsass",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch ./sass/main.scss:./public/css/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

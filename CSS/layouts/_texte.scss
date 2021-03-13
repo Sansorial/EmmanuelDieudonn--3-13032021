@@ -1,0 +1,56 @@
+.text{
+    font-size: nth($font-size, 2);
+    opacity: map-get($opacity, light);
+    @include tablet-only{
+        font-size: 14px;
+    }
+    @include mobile-only{
+        font-size: nth($font-size, 2);
+    }
+    @include tablet-only{
+        font-size: 12px;
+    }
+    &__bold{
+        font-weight: bold;
+        margin-top: nth($margin-top, 2);
+        margin-bottom: nth($margin-bottom, 1);
+        font-size: nth($font-size, 6);
+        @include tablet-only{
+            font-size: nth($font-size, 4);
+            @include firstmargin;
+        }
+        @include mobile-only{
+            font-size: nth($font-size, 4);
+            margin-bottom: 5px;
+        }
+        &--menu{
+            font-size: nth($font-size, 2);
+            font-weight: bold;
+            @include firstmargin;
+            @include tablet-only{
+                font-size: nth($font-size, 6);
+            }
+        }
+        & a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    &__opacity{
+        font-size: nth($font-size, 5);
+        opacity: map-get($opacity, middle);
+        @include mobile-only{
+            font-size: nth($font-size, 4);
+        }
+        @include tablet-only{
+            font-size: nth($font-size, 4);
+        }
+        &--menu{
+            font-size: nth($font-size, 1);
+            margin-bottom: nth($margin-bottom, 1);
+            @include tablet-only{
+                font-size: nth($font-size, 5);
+            }
+        }
+    }
+}      
