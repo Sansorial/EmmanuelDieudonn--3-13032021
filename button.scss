@@ -1,29 +1,4 @@
-@keyframes disparition{
-    100% {
-        opacity: 0;
-        z-index: -10;
-    }
-}
-@keyframes progress-ball{
-    0% {
-        transform: scaleX(0);
-    }
-    17% {
-        transform: scaleX(.18);
-    }
-    24% {
-        transform: scaleX(.4);
-    }
-    46% {
-        transform: scaleX(.81);
-    }
-    85%,100% {
-        opacity:1;
-    }
-    100% {
-        transform: scaleX(1);
-    }
- }
+
  @mixin firstpadding{
     padding: 10px 0px 10px 0px; 
 }
@@ -113,6 +88,11 @@ $margin-left: 20px, 25px;
     display: flex;
     padding-top: 23px;
     padding-right: nth($padding-right, 1);
+    animation: boxreverse 400ms linear both;
+        &:hover{
+            animation: box 400ms linear;
+            padding-right: 70px;
+        }
 }
 .box5{
     width: 15%;
