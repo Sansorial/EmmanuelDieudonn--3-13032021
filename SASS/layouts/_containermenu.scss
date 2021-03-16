@@ -30,6 +30,54 @@
         }
     }
 }
+.descriptifbox{
+    display: flex;
+    justify-content: space-between;
+    @include fourthpadding;
+    border-radius: 30px;
+    transform: rotate(0turn);
+    &:hover .box-ok {
+        transform-origin: right 100%;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(1);
+    }
+    &:hover .fa-check-circle {
+        transform: rotate(2turn);
+        transition: transform 400ms ease-in-out;
+        }
+        @include mobile-only{
+            padding: 0px;
+            border-radius: 15px;
+        }
+        @include tablet-only{
+            width: 80%;
+            display: flex;
+            flex-direction: initial;
+        }
+    &__link{
+        @include mobile-only{
+        padding-left: nth($padding-left, 1);
+    }
+}  
+.details{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    @include tablet-only{
+        width: 70%;
+    }
+    @include mobile-only{
+        padding-left: nth($padding-left, 1);
+    }
+    & p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
 .menu{
     width: 5%;
     border-bottom: 10px solid $colorsecondary;
@@ -83,25 +131,6 @@
         margin-bottom: 30px;
     }
 }
-.details{
-    width: calc(100% - 120px);
-    display: flex;
-    flex-direction: column;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    @include tablet-only{
-        width: 70%;
-    }
-    @include mobile-only{
-        padding-left: nth($padding-left, 1);
-    }
-    & p{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
 .box-ok{
     width: 15%;
     height: 58px;
@@ -128,33 +157,5 @@
         height: 100%;
     }
 }
-.descriptifbox{
-    display: flex;
-    justify-content: space-between;
-    @include fourthpadding;
-    border-radius: 30px;
-    transform: rotate(0turn);
-    &:hover .box-ok {
-        transform-origin: right 100%;
-        transition: transform 300ms ease-in-out;
-        transform: scaleX(1);
-    }
-    &:hover .fa-check-circle {
-        transform: rotate(2turn);
-        transition: transform 400ms ease-in-out;
-        }
-        @include mobile-only{
-            padding: 0px;
-            border-radius: 15px;
-        }
-        @include tablet-only{
-            width: 80%;
-            display: flex;
-            flex-direction: initial;
-        }
-    &__link{
-        @include mobile-only{
-        padding-left: nth($padding-left, 1);
-        }
-    }   
+ 
 }
