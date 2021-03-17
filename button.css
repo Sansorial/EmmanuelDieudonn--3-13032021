@@ -19,7 +19,8 @@
           transform: rotate(0turn);
 }
 
-.box:hover .box5 {
+.box:hover .box2 {
+  width: calc(100%-20%);
   -webkit-transform-origin: right 100%;
           transform-origin: right 100%;
   -webkit-transition: -webkit-transform 300ms ease-in-out;
@@ -61,18 +62,18 @@
   display: flex;
   padding-top: 23px;
   padding-right: 10px;
-  -webkit-animation: boxreverse 400ms linear both;
-          animation: boxreverse 400ms linear both;
+  -webkit-animation: 400ms linear both;
+          animation: 400ms linear both;
 }
 
 .box4:hover {
-  -webkit-animation: box 400ms linear;
-          animation: box 400ms linear;
+  -webkit-animation: 400ms linear;
+          animation: 400ms linear;
   padding-right: 70px;
 }
 
 .box5 {
-  width: 15%;
+  width: 20%;
   height: 58px;
   background-color: #99E2D0;
   border-radius: 0px 25px 25px 0px;
