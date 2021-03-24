@@ -27,4 +27,9 @@ header{
         left: 6%;
         top: 3%;
     }
+    @include tablet-only{
+        position: absolute;
+        left: 50px;
+        top: 35px;
+    }
 }

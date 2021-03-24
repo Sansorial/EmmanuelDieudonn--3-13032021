@@ -5,4 +5,10 @@
 .containerall{
     width: 1200px;
     margin: 0 auto;
+    @include mobile-only{
+        width:375px;
+    }
+    @include tablet-only{
+        width:768px;
+    }
 }
