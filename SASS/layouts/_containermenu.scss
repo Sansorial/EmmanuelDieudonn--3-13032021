@@ -79,7 +79,7 @@
 }
 .menu{
     width: 5%;
-    border-bottom: 10px solid $colorsecondary;
+    border-bottom: 10% solid $colorsecondary;
     opacity: map-get($opacity, middle);
     margin-top: nth($margin-top, 5);
     margin-left: nth($margin-left, 2);
