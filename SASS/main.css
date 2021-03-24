@@ -584,10 +584,12 @@ header img {
   padding-right: 10px;
   -webkit-animation: boxreverse 400ms linear both;
           animation: boxreverse 400ms linear both;
-  /*&:hover{
-            animation: box 400ms linear;
-            padding-right: 70px;
-        }*/
+}
+
+.descriptifbox .menu__price:hover {
+  -webkit-animation: box 400ms linear;
+          animation: box 400ms linear;
+  padding-right: 70px;
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
