@@ -16,7 +16,7 @@ header{
 }
 .fa-arrow-left{
     position: absolute;
-    left: 50px;
+    left: 300px;
     top: 35px;
     opacity: map-get($opacity, light);
     font-size: nth($font-size, 7);

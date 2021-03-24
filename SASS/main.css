@@ -92,7 +92,7 @@
   padding: 0px;
 }
 
-.container {
+.containerall {
   width: 1200px;
   margin: 0 auto;
 }
@@ -135,9 +135,10 @@ h2 {
 }
 
 .btn--long {
+  width: 200px;
   margin-top: 30px;
-  margin-right: 650px;
-  margin-left: 650px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 0px 10px 0px;
   font-size: 15px;
 }
@@ -196,7 +197,7 @@ header img {
 
 .fa-arrow-left {
   position: absolute;
-  left: 50px;
+  left: 300px;
   top: 35px;
   opacity: 0.8;
   font-size: 30px;
@@ -396,7 +397,6 @@ header img {
 }
 
 .container__optioncontainer {
-  width: 20%;
   margin-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
