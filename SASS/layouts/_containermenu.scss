@@ -112,10 +112,10 @@
         padding-top: 23px;
         padding-right: nth($padding-right, 1);
         animation: boxreverse 400ms linear both;
-        &:hover{
+        /*&:hover{
             animation: box 400ms linear;
             padding-right: 70px;
-        }
+        }*/
         @include tablet-only{
             font-size: nth($font-size, 6);
             width: 10%;

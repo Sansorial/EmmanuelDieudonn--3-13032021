@@ -49,7 +49,9 @@
         }
     }
     &--pink{
-        color: #FF79DA;
+        background: -webkit-linear-gradient(175deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         position: absolute;
         bottom: 25%;
         right: 20%;
