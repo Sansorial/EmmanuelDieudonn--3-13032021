@@ -407,7 +407,7 @@ header img {
 .container {
   -webkit-box-shadow: 0px 15px 20px 0px #d3d3d3;
           box-shadow: 0px 15px 20px 0px #d3d3d3;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 @media all and (max-width: 690px) {
@@ -509,11 +509,13 @@ header img {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+  -webkit-animation: apparition 2000ms;
+          animation: apparition 2000ms;
 }
 
 @media all and (max-width: 690px) {
   .descriptifbox__menu {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -521,6 +523,26 @@ header img {
   .descriptifbox__menu {
     width: 80%;
   }
+}
+
+.menu-1 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.menu-2 {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.menu-3 {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
+.menu-4 {
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
 }
 
 .details {
@@ -1195,6 +1217,28 @@ nav p {
   100% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    margin-top: 40px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    margin-top: 40px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

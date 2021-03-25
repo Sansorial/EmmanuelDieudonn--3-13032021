@@ -1,7 +1,5 @@
 .container{
     @include containershadow ($colorfifth);
-        margin-top: nth($margin-top, 5);
-    @include mobile-only{
         margin-top: nth($margin-top, 3);
     }
     &__optioncontainer{
@@ -26,12 +24,22 @@
             background: rgba(146, 86, 220, 0.1);
         }
     }
-}
 .descriptifbox{
+    opacity:0;
+    animation: appear 1400ms forwards;
+    &:nth-child(2) {
+        animation-delay: 300ms;
+    }
+    &:nth-child(3){
+        animation-delay: 600ms;
+    }
+    &:nth-child(4){
+        animation-delay: 900ms;
+    }
     display: flex;
     justify-content: space-between;
     @include fourthpadding;
-    border-radius: 30px;
+    border-radius: 15px;
     transform: rotate(0turn);
     &:hover .box-ok {
         transform-origin: right 100%;
@@ -60,8 +68,9 @@
         width: 30%;
         margin-left: auto;
         margin-right: auto;
+        animation: apparition 5000ms;
         @include mobile-only{
-            width: 80%;
+            width: 70%;
         }
         @include tablet-only{
             width: 80%;
@@ -91,7 +100,7 @@
     width: 10%;
     display: flex;
     justify-content: center;
-    border-bottom: 5px solid $colorsecondary;
+    border-bottom: 5vw solid $colorsecondary;
     opacity: map-get($opacity, middle);
     margin-top: nth($margin-top, 5);
     margin-left: nth($margin-left, 2);
