@@ -322,24 +322,53 @@ header img {
 .heartstitle {
   position: absolute;
   top: 5%;
-  right: 8%;
+  right: 6%;
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
   .heartstitle {
+    position: absolute;
     top: 2%;
+    right: 10%;
   }
+}
+
+@media all and (max-width: 690px) {
+  .heartstitle {
+    position: absolute;
+    top: 2.5%;
+    right: 10%;
+  }
+}
+
+.heartstitle:hover .hearts--pink {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .hearts {
   position: absolute;
   top: 30%;
-  right: 2%;
+  right: 8%;
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
   .hearts {
-    right: 6%;
+    right: 15%;
+    top: 20%;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .hearts {
+    top: 40%;
+    right: 15%;
   }
 }
 
@@ -355,29 +384,24 @@ header img {
 }
 
 .hearts--empty {
-  font-size: 30px;
   position: absolute;
-  top: 35%;
-  right: 10%;
+  font-size: 30px;
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
   .hearts--empty {
-    bottom: 20%;
     font-size: 25px;
-    margin-right: 0px;
   }
 }
 
 @media all and (max-width: 690px) {
   .hearts--empty {
-    bottom: 10%;
     font-size: 25px;
-    margin-right: 25px;
   }
 }
 
 .hearts--pink {
+  position: absolute;
   background: -webkit-linear-gradient(175deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -389,24 +413,17 @@ header img {
   transition: transform 330ms ease-in-out;
   transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
   overflow: hidden;
-  position: absolute;
-  top: 35%;
-  right: 10%;
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
   .hearts--pink {
-    bottom: 20%;
     font-size: 25px;
-    margin-right: 0px;
   }
 }
 
 @media all and (max-width: 690px) {
   .hearts--pink {
-    bottom: 10%;
     font-size: 25px;
-    margin-right: 25px;
   }
 }
 
@@ -420,6 +437,15 @@ header img {
 }
 
 @media all and (min-width: 691px) and (max-width: 1024px) {
+  .allblock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media all and (max-width: 690px) {
   .allblock {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -882,12 +908,6 @@ footer .footer__informations a {
 @media all and (max-width: 690px) {
   footer .footer__informations .fa-hands-helping {
     font-size: 15px;
-  }
-}
-
-@media all and (min-width: 691px) and (max-width: 1024px) {
-  footer .footer__informations.fa-utensils {
-    width: 20%;
   }
 }
 

@@ -4,6 +4,9 @@
     @include tablet-only{
         flex-direction: column;
     }
+    @include mobile-only{
+        flex-direction: column;
+    }
 }
 .container{
     @include containershadow ($colorfifth);

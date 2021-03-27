@@ -53,13 +53,18 @@ footer{
             }
         }
         & .fa-hands-helping{
+            @include tablet-only{
+                
+            }
             @include mobile-only{
                 font-size: nth($font-size, 2);
             }
         }
         &.fa-utensils{
             @include tablet-only{
-                width:20%;
+               
+            }
+            @include mobile-only{
             }
         }
         &--phrase{

@@ -28,18 +28,35 @@
 }
 .heartstitle{
     position: absolute;
-    top: 5%;
-    right: 8%;
+    top:5%;
+    right:6%;
     @include tablet-only{
+        position: absolute;
         top: 2%;
+        right: 10%;
+    }
+    @include mobile-only{
+        position: absolute;
+        top: 2.5%;
+        right: 10%;
+    }
+    &:hover .hearts--pink{
+        transform: scale(1); 
+        transform-origin: left; 
+        transition: transform 400ms;
     }
 }
 .hearts{
     position: absolute;
     top: 30%;
-    right: 2%;
+    right: 8%;
     @include tablet-only{
-        right:6%;
+        right: 15%;
+        top: 20%;
+    }
+    @include mobile-only{
+        top: 40%;
+        right: 15%;
     }
     &:hover .hearts--pink{
         transform: scale(1); 
@@ -47,22 +64,17 @@
         transition: transform 400ms;
     }
     &--empty{
-        font-size: nth($font-size, 7);
         position: absolute;
-        top: 35%;
-        right: 10%;
+        font-size: nth($font-size, 7);
         @include tablet-only{
-            bottom: 20%;
             font-size: nth($font-size, 6);
-            margin-right: 0px;
         }
         @include mobile-only{
-            bottom: 10%;
             font-size: nth($font-size, 6);
-            margin-right: nth($margin-right, 3);
         }
     }
     &--pink{
+        position: absolute;
         background: -webkit-linear-gradient(175deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;     
@@ -70,18 +82,11 @@
         transform: scale(0);
         transition: transform 330ms ease-in-out;
         overflow: hidden;
-        position: absolute;
-        top: 35%;
-        right: 10%;
         @include tablet-only{
-            bottom: 20%;
             font-size: nth($font-size, 6);
-            margin-right: 0px;
         }
         @include mobile-only{
-            bottom: 10%;
             font-size: nth($font-size, 6);
-            margin-right: nth($margin-right, 3);
         }
     }
 }
