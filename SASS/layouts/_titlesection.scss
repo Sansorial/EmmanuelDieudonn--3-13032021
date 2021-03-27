@@ -25,12 +25,22 @@
 }
 .titlesection{
     font-family: shrikhand, sans-serif;
-
+}
+.heartstitle{
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    @include tablet-only{
+        top: 2%;
+    }
 }
 .hearts{
     position: absolute;
-    top: 2%;
-    right: 8%;
+    top: 30%;
+    right: 2%;
+    @include tablet-only{
+        right:6%;
+    }
     &:hover .hearts--pink{
         transform: scale(1); 
         transform-origin: left; 

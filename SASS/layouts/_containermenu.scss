@@ -1,5 +1,6 @@
 .allblock{
     display: flex;
+    justify-content: space-between;
     @include tablet-only{
         flex-direction: column;
     }
@@ -66,7 +67,6 @@
             border-radius: 15px;
         }
         @include tablet-only{
-            width: 80%;
             display: flex;
             flex-direction: initial;
         }
@@ -148,7 +148,7 @@
     top: 0%;
     transform: scaleX(0);
     @include tablet-only{
-        height: 80px;
+        width:10%;
     }
     @include mobile-only{
         border-radius: 0px 15px 15px 0px;
