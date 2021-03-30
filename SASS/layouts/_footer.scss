@@ -52,19 +52,12 @@ footer{
                 margin-bottom: nth($margin-bottom, 2);
             }
         }
+        & i{
+            width: 18px;
+        }
         & .fa-hands-helping{
-            @include tablet-only{
-                
-            }
             @include mobile-only{
                 font-size: nth($font-size, 2);
-            }
-        }
-        &.fa-utensils{
-            @include tablet-only{
-               
-            }
-            @include mobile-only{
             }
         }
         &--phrase{

@@ -472,7 +472,7 @@ header img {
 @media all and (max-width: 690px) {
   .container__optioncontainer {
     width: 90%;
-    margin-left: 15px;
+    margin-left: 8px;
     border-radius: 20px;
   }
 }
@@ -611,8 +611,8 @@ header img {
 }
 
 .menu {
-  width: 10%;
-  border-bottom: 1vw solid #99E2D0;
+  width: 50px;
+  border-bottom: 3px solid #99E2D0;
   opacity: 0.5;
   margin-top: 50px;
   margin-left: 25px;
@@ -622,8 +622,6 @@ header img {
 
 @media all and (max-width: 690px) {
   .menu {
-    width: 12%;
-    border-bottom: 3px solid #99E2D0;
     margin-top: 25px;
     font-size: 15px;
     padding-bottom: 5px;
@@ -664,6 +662,12 @@ header img {
   .menu__price {
     font-size: 25px;
     width: 10%;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .menu__price {
+    width: 6%;
   }
 }
 
@@ -903,6 +907,10 @@ footer .footer__informations a {
   footer .footer__informations a {
     margin-bottom: 15px;
   }
+}
+
+footer .footer__informations i {
+  width: 18px;
 }
 
 @media all and (max-width: 690px) {
@@ -1155,7 +1163,7 @@ nav p {
 
 @media all and (max-width: 690px) {
   .container__restaurant--badge {
-    font-size: 13px;
+    font-size: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 2px;
